@@ -1,0 +1,498 @@
+
+/* ======================================= ALL PAGE ================================ */
+
+*{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    scroll-behavior: smooth;
+}
+
+#homepage1 {
+    height: 80vh;
+    /* background-color: pink; */
+}
+
+#aboutme1 {
+    height: 75vh;
+    /* background-color: yellow; */
+}
+
+#portofolio1 {
+    height: 100vh;
+    /* background-color: green; */
+}
+
+#contactme1 {
+    height: 65vh;
+    /* background-color: blueviolet; */
+}
+
+/* ======================================= HOME PAGE ============================== */
+.homepage .MainText{
+    margin-left: 10vw;
+    margin-top: 33vh;
+}
+
+.homepage .MainText .Top h1{
+    color: #024E75;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.homepage .MainText .Bottom h1{
+    color: #41b6e6;
+    font-size: 2vw;
+    margin-bottom: 1vh;
+    margin-top: -1vh;
+    font-weight: bolder;
+}
+
+.homepage .MainText .Bottom h2{
+    color: black;
+    font-size: 1vw;
+    margin-bottom: 2vh;
+    margin-right: 15vw;
+    text-align: justify;
+}
+
+header{
+    position: fixed;
+    top:0vh;
+    left: 0vw;
+    width: 100%;
+    transition: 0.6s;
+}
+
+header.sticky{
+    margin-top: -2vh;
+    background-color: white;
+}
+
+header.sticky ul li a{
+    color:black;
+}
+
+.homepage nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 33.5vw;
+    margin-top: 2vh;
+
+}
+
+.homepage nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.homepage nav ul li a {
+    font-weight: bolder;
+    color: #024E75;
+    position: relative;
+    font-size: 1vw;
+    font-family: 'Poppins';
+}
+
+.homepage nav ul li a:hover {
+    color: #41b6e6;
+    text-decoration: none;
+}
+
+.homepage nav ul li a:active {
+    color: #41b6e6;
+    text-decoration: none;
+}
+
+.homepage .MainText .butcontactme {
+    background-color: #024E75;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+}
+
+.homepage .MainText .butcontactme:hover{
+    background-color:#41b6e6;
+    color:white;
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 15px #41b6e6,
+        0 0 30px #024E75;
+    }
+}
+
+.homepage .gambar img{
+    height: 70vh;
+    width: 35vw;
+    margin-right: 5vw;
+    margin-top: 15vh;
+}
+
+.homepage .homeflex{
+    display: flex;
+}
+
+
+
+/* ================================== ABOUT ME PAGE ======================================*/
+
+.aboutme{
+    /* margin-top: 40vh;
+    margin-bottom: 20vh; */
+    display : flex;
+}
+
+.aboutme h1{
+    margin-left: 10vw;
+    color: #024E75;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+
+.aboutme img{
+    margin-left: 9vw;
+    margin-top: 13vh;
+    height: 50vh;
+    width: 40vw;
+}
+
+.aboutme .text{
+    margin-top: 30vh;
+    margin-left: 3vw;
+    margin-right: 9vw;
+}
+
+.aboutme .text h2{
+    margin-left: 10vw;
+    text-align: justify;
+    font-size: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.aboutme .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme .butcontactme {
+    background-color: #024E75;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    margin-left: 10vw;
+    margin-top: 2vh;
+}
+
+.aboutme .butcontactme:hover {
+    background-color:#41b6e6;
+    color:white;
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 15px #41b6e6,
+        0 0 30px #024E75;
+    }
+}
+
+.aboutme .hidden{
+    height: 5vh;
+}
+
+/* ======================================= PORTFOLIO ================================== */
+
+.portfolio{
+    /* margin-bottom: 20vh; */
+}
+
+.portfolio .kotakflex{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 8vw;
+}
+
+.portfolio .kotak{
+    background-color: white;
+    height: 37vh;
+    width: 40vw;
+    box-shadow: 5px 5px 18px lightgray;
+    border-radius: 10px;
+    margin-right: 3vw;
+    margin-top: 3vh;
+    display: flex;
+}
+
+.portfolio h1{
+    text-align: center;
+    color: #024E75;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    font-size: 2.5vw;
+}
+
+.portfolio .kotakflex .kotak img{
+    height: 29vh;
+    width: 13vw;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    border-radius: 15px;
+}
+
+.portfolio .kotakflex .kotak h3{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+}
+
+.portfolio .kotakflex .kotak h4{
+    font-family: 'Poppins';
+    margin-left: 3vw;
+    font-size: 1.2vw;
+}
+
+.portfolio .kotakflex .flexkiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .kotakflex .flexkanan{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .kotakflex .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .kotakflex .text h5{
+    text-align: justify;
+    margin-left: 3vw;
+    margin-right: 1.5vw;
+    font-size: 0.8vw;
+    margin-top: 1vh;
+}
+
+.portfolio .kotakflex .text a{
+    text-align: justify;
+    margin-left: 3vw;
+    margin-right: 1.5vw;
+    color:#024E75;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.portfolio .kotakflex .text a:hover{
+    color:#41b6e6;
+}
+
+.portfolio .hidden{
+    height: 5Vh;
+}
+/* =================================== CONTACTME ========================================= */
+
+.contactme h1{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: #024E75;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.contactme .text{
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+
+.contactme .text h2{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: #024E75;
+    font-size: 2vw;
+}
+
+.contactme .text h5{
+    font-family: 'Poppins';
+    color: black;
+    font-size: 1vw;
+}
+
+.contactme .text h6{
+    font-family: 'Poppins';
+    color: black;
+    font-size: 0.8vw;
+}
+
+.contactme .flex{
+    display: flex;
+}
+
+.contactme .flex .text2{
+    margin-left: 18vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.contactme .flex .text2 h1{
+    margin-left: -9.5vw;
+    font-size: 1.5vw;
+}
+
+input{
+    background-color: rgba(65, 183, 230, 0.185);
+    border-radius: 6px;
+    border: none;
+    height: 5vh;
+    width: 25vw;
+    margin-top: 2vh;
+    padding-left: 0.5vw;
+}
+
+.contactme .buttoncontact {
+    background-color: #024E75;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+}
+
+.contactme .buttoncontact:hover {
+    background-color:#41b6e6;
+    color:white;
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 15px #41b6e6,
+        0 0 30px #024E75;
+    }
+}
+
+.contactme .kotak{
+    background-color: white;
+    height: 5vh;
+    width: 15vw;
+    box-shadow: 5px 5px 18px lightgray;
+    border-radius: 10px;
+    margin-top: 2vh;
+    display: flex;
+}
+
+.contactme .kotak a{
+    display: flex;
+    color:black;
+    text-decoration: none;
+    width: 20vw;
+}
+
+.contactme .flex .text .kotak img{
+    height: 4vh;
+    width: 2.2vw;
+    margin-top: 0.6vh;
+    margin-left: 0.5vw;
+}
+
+.contactme .flex .text .kotak h6{
+    margin-top: 1.5vh;
+    font-weight: bold;
+    margin-left: 0.8vw;
+}
+
+.contactme .flex .kotak:hover{
+    transform: scale(1.1);
+}
+
+.contactme .hidden{
+    height: 8vh;
+}
+/* ========================================= FOOTER ============================================== */
+
+.footer{
+    background-color: #024E75;
+    height: 30vh;
+}
+
+.footer .footerflex{
+    display: flex;
+}
+
+.footer .kiri{
+    margin-top: 6vh;
+    margin-left: 8vw;
+}
+
+.footer .kiri img{
+    height: 4vh;
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.footer .kiri h5{
+    color: white;
+    font-size: 0.8vw;
+}
+
+.footer h4{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: white;
+    margin-left: 34vw;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 1vw;
+}
+.footer-col .sociallink a{
+    display: inline-block;
+    height: 4.4vh;
+    width: 2.3vw;
+    background-color: white;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #024E75;
+    transition: all 0.5s ease;
+}
+
+.footer-col .sociallink a:hover{
+    color:white;
+    background-color:#41b6e6;
+}
+
+.footer-col .sociallink{
+    margin-left: 34vw;
+}
+
+.footer .bottext h6{
+    color: white;
+    font-size: 0.8vw;
+}
+
+.footer .bottext{
+    text-align: center;
+    margin-top: 5vh;
+}
